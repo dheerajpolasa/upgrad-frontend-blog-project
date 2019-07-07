@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Maya Blog</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="cssFiles/stysheet.css">
+
+        <script src="javaScriptFiles/landingPage.js" type="application/javascript"></script>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+              integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    </head>
+
+    <body>
+
+        <nav class="navbar" id="myNavbar">
+
+            <a class="navbar-brand" id="navTitle">Blog Maya</a>
+
+            <div class="form-inline" id="navButtons">
+
+                <button id="navLoginButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign-In</button>
+                <button id="navSignUpButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign-Up</button>
+
+            </div>
+
+        </nav>
+
+
+        <div id="myContent">
+
+            <div class="alert alert-primary" role="alert" id="contolHint">
+                <h6 id="hintText">Hint Text</h6>
+            </div>
+
+
+            <div id="signInForm">
+
+
+
+                <div id="headSignIn">
+                    <h4>Wecome User!</h4>
+                    <i class="far fa-window-close" id="closeSiginIn"></i>
+                </div>
+
+                <hr>
+
+                <form>
+
+                    <div class="form-group">
+                        <label for="siginInEmailAddress">Email address</label>
+                        <input type="email" class="form-control" id="siginInEmailAddress" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signInPassword">Password</label>
+                        <input type="password" class="form-control" id="signInPassword" placeholder="Password">
+                    </div>
+
+
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+
+            </div>
+
+
+            <div id="signUpForm">
+
+
+
+                <div id="headSignUp">
+                    <h4>Create New Account!</h4>
+                    <i class="far fa-window-close" id="closeSignUp"></i>
+                </div>
+
+                <hr>
+
+                <form>
+
+                    <div class="form-group">
+                        <label for="nameSignUp">Full Name</label>
+                        <input type="text" class="form-control" id="nameSignUp" placeholder="Enter Full Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="siginUpEmailAddress">Email address</label>
+                        <input type="email" class="form-control" id="siginUpEmailAddress" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signUpPassword">Password</label>
+                        <input type="password" class="form-control" id="signUpPassword" placeholder="Password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cnfSignUpPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="cnfSignUpPassword" placeholder="Enter Password again">
+                    </div>
+
+
+                    <button type="submit" class="btn btn-success">Create Account</button>
+                </form>
+
+            </div>
+
+
+            <div id="addPostForm">
+
+                <div id="addPostHead">
+                    <h4>Add new Post</h4>
+                    <i class="far fa-window-close" id="closeAddPost"></i>
+                </div>
+
+                <hr>
+
+                <form>
+
+                    <div class="form-group">
+                        <label for="postHead">Post Heading</label>
+                        <input type="text" class="form-control" id="postHead" placeholder="Title">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="postDesc">Description</label>
+                        <textarea type="text" class="form-control" id="postDesc" placeholder="Add Description Here" cols="20" rows="10"></textarea>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-success">Add Post</button>
+                </form>
+
+            </div>
+
+
+
+
+            <div id="postControls">
+
+                <div id="createPost">
+
+                    <img src="extras/create-post-icon.png" alt="createPostIcon">
+
+
+                </div>
+
+                <div id="showPosts">
+
+                    <img src="extras/show-post-content.png" alt="showAllPosts">
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+    </body>
+
+</html>
