@@ -1,0 +1,250 @@
+
+/* ----------------------- NavBar Styles ----------------------------- */
+
+#myNavbar
+{
+    padding: 1.5%;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
+    background-color: white;
+}
+
+#navTitle
+{
+    font-size: 175%;
+    color: #006699;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+#navLoginButton, #navSignUpButton
+{
+    margin-right: 10%;
+
+}
+
+#navButtons
+{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/*  ----------------------------- myContent styles ------------------------ */
+
+#myContent
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+
+/* --------------------------- Post Controls  ---------------------------- */
+
+#postControls
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+
+}
+
+#createPost
+{
+    margin-right: 5%;
+    padding: 3%;
+    border-radius: 50%;
+    /*border: 2px solid black;*/
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+#showPosts
+{
+    margin-left: 5%;
+    padding: 3%;
+    border-radius: 50%;
+    /*border: 2px solid black;*/
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+#createPost:hover, #showPosts:hover
+{
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+#contolHint
+{
+    position: fixed;
+    z-index: +1;
+    top: 25%;
+    display: none;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#signInForm, #signUpForm, #confirmDelete
+{
+    position: fixed;
+    z-index: +1;
+    top: 20%;
+    width: 40%;
+    background: white;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
+    padding: 3%;
+    border-radius: 10px;
+    display: none;
+}
+
+#headSignIn, #headSignUp, #addPostHead
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#closeSiginIn, #closeSignUp, #closeAddPost
+{
+    color: red;
+    cursor: pointer;
+}
+
+#addPostForm
+{
+    position: fixed;
+    z-index: +1;
+    top: 15%;
+    width: 60%;
+    background: white;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
+    padding: 3%;
+    border-radius: 10px;
+    display: none;
+}
+
+#controls-confirm
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+
+/*---------------------------------posts page---------------------------------*/
+
+#myContentPostsPage
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#allPosts
+{
+    width: 80%;
+    margin: 2%;
+    padding: 2%;
+}
+
+.myPostCardHeader
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #d4edda;
+}
+
+.myPostCard
+{
+    margin: 2%;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-open
+{
+    color: #006699;
+    background-color: white;
+    border: 1px solid #006699;
+}
+
+.btn-open:hover
+{
+    color: white;
+    background-color: #006699;
+}
+
+.deletePost
+{
+    color: red;
+    cursor: pointer;
+}
+
+
+
+/* ---------------------------------full article page ---------------------------*/
+
+#myContentFullArticle
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#contolsArticle
+{
+    margin-top: 1%;
+    margin-bottom: 3%;
+    color: #006699;
+}
+
+#myArticleContent
+{
+    width: 80%;
+    margin: 2%;
+    padding: 2%;
+}
+
+#socialControls {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+#commentEntryDiv
+{
+    width: 80%;
+    margin-bottom: 5%;
+    display: none;
+}
+
+#showComments
+{
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.soc-con-btn
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#likeCount
+{
+    margin-left: 12%;
+    margin-bottom: 2%;
+    align-self: start;
+}
